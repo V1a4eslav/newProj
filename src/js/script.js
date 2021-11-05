@@ -60,7 +60,7 @@ function decreaseGuess(number) {
    }
 }
 
-function changeColor() {
+function changeColor(color) {
    let count = document.querySelector('.count');
    let helpText = document.querySelector('.help-text');
    let guessCount = document.querySelector('.guess-count');
