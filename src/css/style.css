@@ -82,6 +82,7 @@ body {
    width: 500px;
    min-height: 400px;
    perspective: 1000px;
+   margin: 0 auto;
 }
 .generate__front {
 }
@@ -127,4 +128,30 @@ body {
 }
 .show {
    transform: rotateY(360deg);
+}
+
+.button {
+   width: 80px;
+   height: 80px;
+   border: none;
+   cursor: pointer;
+   background: transparent;
+   border: 0;
+   outline: none;
+   background-image: url(../img/google-play.svg);
+   background-repeat: no-repeat;
+}
+
+.main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.form {
+   text-align: center;
+}
+
+.form__element {
+   margin: 15px 0;
 }

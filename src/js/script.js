@@ -1,3 +1,11 @@
+// let genNumber;
+// let userNumber
+
+function generateNumber(max) {
+    return genNumber = Math.floor(Math.random() * max);
+}
+genNumber = generateNumber(10);
+
 function clickFrontBack() {
    const frontBtn = document.querySelector('.front__btn');
    const btnReset = document.querySelector('.btn_reset');
@@ -29,6 +37,11 @@ function clickGuess() {
    if (!btnGuess) {
       return;
    }
+   // if(userNumber === genNumber)
+   //       return  alert("you win");
+   //  else if (userNumber !== genNumber) {
+   //       decreaseGuess(number) 
+   //  }
    btnGuess.addEventListener("click", (e) => {
       e.preventDefault();
       decreaseGuess(count);
@@ -39,9 +52,14 @@ clickGuess();
 
 function decreaseGuess(number) {
    if ((parseInt(number.innerText)) > 0) {
-      --number.innerText;
+      number.innerText--;
+      if ((parseInt(number.innerText) === 0)) {
+      alert("you lose")
+      }
+      
    }
 }
+
 function changeColor() {
    let count = document.querySelector('.count');
    let helpText = document.querySelector('.help-text');

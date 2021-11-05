@@ -15,13 +15,30 @@
       <div class="generate">
          <div class="generate__front front">
             <div class="front__inner">
-               <h1 class="front__title">Front</h1>
-               <button class="front__btn">Кнопка</button>
+               <main class="main generate">
+                  <h1 class="visually-hidden">Игра</h1>
+                  <h2 class="title">Давай сыграем</h2>
+                  <span class ="text"> Заполните пункты меню</span>
+                  <form class="form">
+                    <div class="main__field">
+                      <div class="form__element text-field">
+                        <label class="text-field__label" for="username"></label>
+                        <input class="text-field__input" type="text" name="quantity" id="quantity" placeholder="Введите количество попыток">
+                      </div>
+                      <div class="form__element form-fullname__element text-field">
+                        <label class="text-field__label" for="lastname"></label>
+                        <input class="text-field__input" type="text" name="minValue" id="minValue" placeholder="min">
+                      </div>
+                      <div class="form__element form-fullname__element text-field">
+                        <label class="text-field__label" for="middlename"></label>
+                        <input class="text-field__input" type="text" name="maxValue" id="maxValue" placeholder="max">
+                      </div>
+                    </div>
+                    <button class="form__element button front__btn" value="Главная"></button>
+                  </form>
+                </main>
             </div>
          </div>
-
-
-
          <div class="generate__back back">
             <div class="back__inner">
                <h1 class="back__title">How quickly can you guess the random number?</h1>
@@ -45,33 +62,8 @@
                </form>
             </div>
          </div>
-
-
       </div>
    </div>
    <script src="./js/script.js"></script>
 </body>
-
 </html>
-
-
-<!-- <div class="main-block__container _container">
-   <h1 class="main-block__title">How quickly can you guess the random number?</h1>
-   <form class="form">
-      <div class="main-block__row">
-         <span class="main-block__text">What number( <span class="min">0</span> - <span class="max">100</span>
-            )</span>
-         <input name="user-choose" class="input" type="number">
-      </div>
-      <div class="main-block__row">
-         <span class="main-block__text">Guess Count <span class="count normal">7</span></span>
-      </div>
-      <div class="main-block__row">
-         <button class="btn btn-guess">Guess</button>
-      </div>
-      <footer class="footer">
-         <div class="help-text show well">You will succeed</div>
-         <button class="btn btn_reset">Reset</button>
-      </footer>
-   </form>
-</div> -->
