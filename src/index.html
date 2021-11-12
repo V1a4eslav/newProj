@@ -23,8 +23,11 @@
             <div class="generate">
                <div class="generate__front front">
                   <div class="front__inner">
-                     <h1 class="front__title">Front</h1>
-                     <button class="front__btn">Button</button>
+                     <h1 class="front__title">Go play</h1>
+                     <input type="number" class="text-field__input minNumber" placeholder="Min value" required>
+                     <input type="number" class="text-field__input maxNumber" placeholder="Max value" required>
+                     <input type="number" class="text-field__input attempts" placeholder="Attempts" required>
+                     <button class="btn front__btn">GO</button>
                   </div>
                </div>
                <div class="generate__back back">
@@ -44,7 +47,7 @@
                         <div class="back__row">
                            <button class="btn btn-guess">Guess</button>
                         </div>
-                        <div class="back__user-number">Тут будут ваши числа,не повторяйте их</div>
+                        <div class="back__user-number">There will be numbers that you have already used, do not repeat them!</div>
                         <footer class="footer">
                            <div class="help-text show well">You will succeed</div>
                            <button class="btn btn_reset">Reset</button>
